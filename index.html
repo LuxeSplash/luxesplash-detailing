@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="LuxeSplashDetailing.com — interior, exterior, and full auto detailing.">
+<title>LuxeSplashDetailing.com | Auto Detailing</title>
+<style>
+:root{--red:#e10600;--red2:#ff241c;--ink:#070707;--panel:#101010;--panel2:#171717;--text:#f5f5f5;--muted:#9d9d9d;--line:#292929}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:linear-gradient(180deg,#070707 0%,#0d0d0d 38%,#080808 100%);color:var(--text);line-height:1.55}
+a{text-decoration:none;color:inherit}
+.container{width:min(1160px,92%);margin:auto}
+header{position:fixed;inset:0 0 auto;z-index:50;background:rgba(5,5,5,.72);backdrop-filter:blur(18px);border-bottom:1px solid rgba(255,255,255,.07)}
+nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:25px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:1.5px;font-size:18px}
+.brand img{width:142px;height:auto;display:block;object-fit:contain;filter:drop-shadow(0 4px 14px rgba(0,0,0,.45))}
+.brand span{display:none}.brand span em{font-style:normal;color:var(--red)}
+.navlinks{display:flex;gap:30px;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:1px}
+.navlinks a{color:#ccc}.navlinks a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 21px;border-radius:3px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:1px;transition:.2s;border:1px solid transparent}
+.btn-red{background:var(--red);color:white}.btn-red:hover{background:var(--red2);transform:translateY(-2px)}
+.btn-dark{border-color:#444;background:#111}.btn-dark:hover{border-color:var(--red);background:#171717}
+.hero{min-height:820px;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(90deg,rgba(4,4,4,.94) 0%,rgba(4,4,4,.72) 45%,rgba(4,4,4,.28) 100%),url("work-jeep-exterior.jpg") center 58%/cover}
+.hero:after{content:"";position:absolute;right:-180px;bottom:-250px;width:650px;height:650px;border:120px solid rgba(225,6,0,.10);border-radius:50%;pointer-events:none}
+.hero-content{padding-top:95px;position:relative;z-index:2;max-width:760px}
+.kicker{display:inline-flex;align-items:center;gap:10px;color:#fff;text-transform:uppercase;letter-spacing:3px;font-size:12px;font-weight:900;margin-bottom:20px}.kicker:before{content:"";width:38px;height:2px;background:var(--red)}
+.hero-logo{width:330px;height:auto;object-fit:contain;object-position:left center;margin-bottom:18px;filter:drop-shadow(0 10px 24px rgba(0,0,0,.55))}
+h1{font-size:clamp(42px,5.8vw,72px);line-height:.9;text-transform:uppercase;letter-spacing:-3px;margin:4px 0 24px;max-width:800px}h1 span{color:var(--red)}
+.hero p{font-size:18px;color:#d1d1d1;max-width:610px;margin-bottom:30px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+section{padding:96px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:42px}.section-head>div:last-child{max-width:520px}.eyebrow{color:var(--red);font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:3px;margin-bottom:10px}.section-head h2{font-size:clamp(34px,5vw,56px);line-height:.98;text-transform:uppercase;letter-spacing:-1.5px}.section-head p{color:var(--muted)}
+#why{background:#0b0b0b}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}.feature{background:var(--panel);padding:32px}.feature .num{font-size:12px;color:var(--red);font-weight:900;letter-spacing:2px;margin-bottom:28px}.feature h3{font-size:22px;text-transform:uppercase;margin-bottom:10px}.feature p{color:var(--muted);font-size:15px}
+.services{background:#f1f1f1;color:#0b0b0b}.services .section-head p{color:#666}.pricing-note{margin-top:8px;font-size:12px;font-weight:700;color:#555!important}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid #ddd;position:relative;overflow:hidden;box-shadow:0 14px 35px rgba(0,0,0,.08)}.card.featured{border:2px solid var(--red);transform:translateY(-8px)}.card-top{height:175px;background-size:cover;background-position:center;position:relative}.card-top:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1),rgba(0,0,0,.65))}.card-label{position:absolute;z-index:2;left:18px;bottom:16px;background:var(--red);color:white;padding:7px 10px;font-size:10px;font-weight:900;text-transform:uppercase;letter-spacing:1px}.card-body{padding:27px}.card h3{font-size:25px;text-transform:uppercase;line-height:1.05;margin-bottom:10px}.sub{color:#777;font-size:13px;margin-bottom:20px}.price-row{padding:12px 0;border-top:1px solid #e3e3e3;display:flex;justify-content:space-between;font-size:15px}.price-row strong{font-size:18px}.card .btn{margin-top:15px;width:100%}.btn-black{background:#090909;color:white}.btn-black:hover{background:var(--red)}
+.process{background:#090909}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.step{background:var(--panel);border:1px solid var(--line);padding:30px;position:relative}.step-number{color:var(--red);font-size:42px;font-weight:900;line-height:1;margin-bottom:28px}.step h3{text-transform:uppercase;font-size:20px;margin-bottom:8px}.step p{color:var(--muted)}
+.gallery-section{background:linear-gradient(180deg,#0b0b0b 0%,#111 100%)}.gallery{display:grid;grid-template-columns:1.35fr 1fr 1fr;grid-template-rows:260px 260px 260px;gap:10px}.gallery div{background-size:cover;background-position:center;border-radius:2px;overflow:hidden;position:relative;min-height:0}.gallery div:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0),rgba(0,0,0,.42));pointer-events:none}.gallery .big{grid-row:span 2}.gallery .wide{grid-column:span 2}.gallery .photo-label{position:absolute;z-index:2;left:14px;bottom:12px;background:rgba(0,0,0,.72);border-left:3px solid var(--red);padding:7px 10px;color:#fff;font-size:10px;font-weight:900;letter-spacing:1.2px;text-transform:uppercase}
+.booking{background:#0b0b0b}.booking-wrap{display:grid;grid-template-columns:1fr 1.2fr;gap:28px}.booking-info{background:var(--panel);border:1px solid var(--line);padding:34px}.booking-info h3{font-size:28px;text-transform:uppercase;margin-bottom:12px}.booking-info p{color:var(--muted);margin-bottom:22px}.contact-list{display:grid;gap:10px}.contact-list a{color:#fff;font-weight:800}.booking-form{background:#f1f1f1;color:#111;padding:34px;border:1px solid #ddd}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.field{display:grid;gap:7px;margin-bottom:16px}.field label{font-size:11px;font-weight:900;text-transform:uppercase;letter-spacing:1.5px}.field input,.field select,.field textarea{width:100%;padding:13px 14px;border:1px solid #ccc;background:#fff;color:#111;font:inherit;border-radius:2px}.field textarea{min-height:115px;resize:vertical}.full{grid-column:1/-1}.other-note{display:none}.booking-form .btn{width:100%;cursor:pointer}.form-status{font-size:13px;margin-top:12px;color:#555}.cta{background:var(--red);color:white;position:relative;overflow:hidden}.cta:after{content:"LUXE";position:absolute;right:-20px;bottom:-45px;font-size:190px;font-weight:900;color:rgba(0,0,0,.08)}.cta .container{position:relative;z-index:2}.cta h2{font-size:clamp(38px,6vw,70px);line-height:.95;text-transform:uppercase;max-width:780px;margin-bottom:16px}.cta p{max-width:650px;margin-bottom:25px;color:#ffe9e9}.cta .btn-dark{background:#090909;border-color:#090909}
+footer{padding:35px 0;border-top:1px solid #222;color:#888}.footer-grid{display:flex;justify-content:space-between;align-items:center;gap:30px;flex-wrap:wrap}.footer-brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:900}.footer-brand img{width:128px;height:auto;object-fit:contain}.contact strong{color:#fff}
+@media(max-width:850px){.booking-wrap{grid-template-columns:1fr}.navlinks{display:none}.features,.cards,.steps{grid-template-columns:1fr}.card.featured{transform:none}.section-head{display:block}.section-head>div:last-child{margin-top:15px}.gallery{grid-template-columns:1fr 1fr;grid-template-rows:230px 230px 230px}.gallery .big{grid-row:span 1}.gallery .wide{grid-column:span 2}.hero{min-height:720px}.hero-logo{width:250px;height:auto}}
+@media(max-width:520px){section{padding:70px 0}.brand img{width:102px;height:44px}.brand{font-size:15px}.hero-logo{width:210px;height:auto}h1{letter-spacing:-2px}.gallery{grid-template-columns:1fr;grid-template-rows:repeat(7,260px)}.gallery .wide{grid-column:span 1}.gallery div{min-height:230px}.hero{min-height:700px}}
+.img-both{background-image:url("work-both-f150.png")}.img-ext{background-image:url("work-foam-wash.jpg")}.img-int{background-image:url("work-jeep-interior.jpg")}
+</style>
+</head>
+<body>
+<header><div class="container"><nav>
+<a href="#" class="brand"><img src="luxesplash-logo-tight.png" alt="LuxeSplash"><span>LUXE<em>SPLASH</em></span></a>
+<div class="navlinks"><a href="#services">Services</a><a href="#why">Why Us</a><a href="#gallery">Our Work</a><a href="#contact">Contact</a></div>
+<a class="btn btn-red" href="#contact">Book Now</a>
+</nav></div></header>
+<main>
+<section class="hero"><div class="container"><div class="hero-content">
+<div class="kicker">LuxeSplashDetailing.com &nbsp;•&nbsp; Memphis, TN</div>
+<h1>Luxury Detailing.<br><span>Unmatched Results.</span></h1>
+<p>Interior, exterior, or both — straightforward detailing packages designed to leave your vehicle looking clean, fresh, and ready to show off. Proudly serving Memphis, TN.</p>
+<div class="actions"><a class="btn btn-red" href="#services">View Pricing</a><a class="btn btn-dark" href="#gallery">See Our Work</a></div>
+</div></div></section>
+
+<section id="why"><div class="container"><div class="section-head"><div><div class="eyebrow">Why LuxeSplash</div><h2>Details Matter.</h2></div><div><p>We focus on the parts of your vehicle that make the biggest difference — from the first rinse to the final wipe-down.</p></div></div>
+<div class="features"><div class="feature"><div class="num">01 / CARE</div><h3>Take Your Time</h3><p>Detailing is more than a quick wash. We work through the interior and exterior with attention to the small areas.</p></div><div class="feature"><div class="num">02 / QUALITY</div><h3>Clean Finish</h3><p>A simple goal: give you a vehicle that feels noticeably cleaner when you get it back.</p></div><div class="feature"><div class="num">03 / LUXE</div><h3>Made For You</h3><p>Choose the service that fits your vehicle, with pricing based on its size.</p></div></div></div></section>
+
+<section class="services" id="services"><div class="container"><div class="section-head"><div><div class="eyebrow">Services & Pricing</div><h2>Pick Your Detail.</h2></div><div><p>Simple pricing based on vehicle size. <strong>Serving Memphis, TN.</strong></p><p class="pricing-note">Prices may vary based on the condition of the vehicle.</p></div></div>
+<div class="cards">
+<article class="card featured"><div class="card-top img-both"><div class="card-label">Most Complete</div></div><div class="card-body"><h3>Both</h3><div class="sub">Interior + Exterior</div><div class="price-row"><span>Sedan</span><strong>$90</strong></div><div class="price-row"><span>SUV</span><strong>$100</strong></div><div class="price-row"><span>Large SUV / Truck</span><strong>$130</strong></div><a class="btn btn-black" href="#contact">Book This</a></div></article>
+<article class="card"><div class="card-top img-ext"><div class="card-label">Exterior</div></div><div class="card-body"><h3>Exterior</h3><div class="sub">Exterior Detail</div><div class="price-row"><span>Sedan / SUV</span><strong>$50</strong></div><div class="price-row"><span>Large SUV / Truck</span><strong>$60</strong></div><a class="btn btn-black" href="#contact">Book This</a></div></article>
+<article class="card"><div class="card-top img-int"><div class="card-label">Interior</div></div><div class="card-body"><h3>Interior</h3><div class="sub">Interior Detail</div><div class="price-row"><span>Sedan</span><strong>$60</strong></div><div class="price-row"><span>SUV</span><strong>$70</strong></div><div class="price-row"><span>Large SUV / Truck</span><strong>$80</strong></div><a class="btn btn-black" href="#contact">Book This</a></div></article>
+</div></div></section>
+
+<section class="booking" id="booking"><div class="container"><div class="section-head"><div><div class="eyebrow">Book A Detail</div><h2>Tell Us What You Need.</h2></div><div><p>Choose a package or select Other if you have a specific detailing request.</p></div></div><div class="booking-wrap"><div class="booking-info"><h3>Ready When You Are.</h3><p>Send a request and LuxeSplash can follow up with you about the details and appointment.</p><p><strong>Service Area:</strong> Memphis, TN</p><div class="contact-list"><a href="tel:+19013908883">901-390-8883</a><a href="tel:+19014937985">901-493-7985</a><a href="mailto:Lluxesplash@gmail.com">Lluxesplash@gmail.com</a></div></div><form class="booking-form" id="bookingForm"><div class="form-grid"><div class="field"><label for="service">Service</label><select id="service" name="service" required><option value="">Choose a service</option><option>Both — Interior + Exterior</option><option>Exterior</option><option>Interior</option><option>Other</option></select></div><div class="field"><label for="vehicle">Vehicle</label><select id="vehicle" name="vehicle" required><option value="">Choose vehicle size</option><option>Sedan</option><option>SUV</option><option>Large SUV / Truck</option><option>Not sure</option></select></div><div class="field full other-note" id="otherField"><label for="otherRequest">What do you need?</label><textarea id="otherRequest" name="otherRequest" placeholder="Tell us what you'd like done to your vehicle..."></textarea></div><div class="field"><label for="name">Name</label><input id="name" name="name" type="text" required placeholder="Your name"></div><div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required placeholder="Your phone number"></div><div class="field"><label for="email">Email</label><input id="email" name="email" type="email" placeholder="Your email"></div><div class="field"><label for="date">Preferred Date</label><input id="date" name="date" type="date"></div><div class="field full"><button class="btn btn-red" type="submit">Request Appointment</button><div class="form-status">Submitting opens your email app with the request ready to send.</div></div></div></form></div></div></section>
+
+<section class="process"><div class="container"><div class="section-head"><div><div class="eyebrow">The Process</div><h2>Simple From Start To Finish.</h2></div></div><div class="steps"><div class="step"><div class="step-number">01</div><h3>Choose</h3><p>Pick interior, exterior, both, or tell us what you need.</p></div><div class="step"><div class="step-number">02</div><h3>Book</h3><p>Send your details and request a time that works for you.</p></div><div class="step"><div class="step-number">03</div><h3>Shine</h3><p>We detail your vehicle and get it looking LuxeSplash clean.</p></div></div></div></section>
+
+<section class="gallery-section" id="gallery"><div class="container"><div class="section-head"><div><div class="eyebrow">Our Work</div><h2>Real Cars. Real Results.</h2></div><div><p>A look at vehicles we have personally detailed. More of our work will be added as the LuxeSplash portfolio grows.</p></div></div>
+<div class="gallery">
+<div class="big" style="background-image:url('work-jeep-exterior.jpg')"><span class="photo-label">Exterior Detail</span></div>
+<div style="background-image:url('work-jeep-interior.jpg')"><span class="photo-label">Interior Detail</span></div>
+<div style="background-image:url('work-gmc-side.jpg')"><span class="photo-label">Truck Detail</span></div>
+<div style="background-image:url('work-gmc-front.jpg')"><span class="photo-label">Exterior Finish</span></div>
+<div style="background-image:url('work-gmc-interior.jpg')"><span class="photo-label">Interior Detail</span></div>
+<div class="wide" style="background-image:url('work-foam-wash.jpg')"><span class="photo-label">Foam Wash</span></div>
+<div style="background-image:url('work-wheel.jpg')"><span class="photo-label">Wheel Detail</span></div>
+</div>
+</div></section>
+
+<section class="cta" id="contact"><div class="container"><div class="eyebrow" style="color:#fff">Ready To Detail?</div><h2>Bring Your Vehicle. We'll Handle The Details.</h2><p>Serving Memphis, TN. Have a question or want to book directly? Reach LuxeSplash by phone or email.</p><div class="actions"><a class="btn btn-dark" href="tel:+19013908883">Call / Text 901-390-8883</a><a class="btn btn-dark" href="mailto:Lluxesplash@gmail.com">Email LuxeSplash</a></div></div></section>
+</main>
+<footer><div class="container footer-grid"><div class="footer-brand"><img src="luxesplash-logo-tight.png" alt="LuxeSplash"><span>LUXESPLASH</span></div><div class="contact"><strong>Contact</strong> &nbsp; 901-390-8883 &nbsp; 901-493-7985 &nbsp; Lluxesplash@gmail.com</div><div>Memphis, TN &nbsp;•&nbsp; © 2026 LuxeSplash</div></div></footer>
+<script>
+const service=document.getElementById('service');
+const otherField=document.getElementById('otherField');
+const otherRequest=document.getElementById('otherRequest');
+service.addEventListener('change',()=>{const show=service.value==='Other';otherField.style.display=show?'grid':'none';otherRequest.required=show;});
+document.getElementById('bookingForm').addEventListener('submit',e=>{e.preventDefault();const f=new FormData(e.target);const subject=encodeURIComponent('LuxeSplash Appointment Request');const body=encodeURIComponent(`Name: ${f.get('name')}
+Phone: ${f.get('phone')}
+Email: ${f.get('email')||'Not provided'}
+Service: ${f.get('service')}
+Vehicle: ${f.get('vehicle')}
+Preferred Date: ${f.get('date')||'Not specified'}
+
+Other Request: ${f.get('otherRequest')||'None'}`);window.location.href=`mailto:Lluxesplash@gmail.com?subject=${subject}&body=${body}`;});
+</script>
+</body></html>
